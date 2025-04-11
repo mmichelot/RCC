@@ -1,0 +1,17 @@
+@use "../abstracts/variables";
+
+.not-found-page {
+    text-align: center;
+    padding: 3rem 1rem;
+
+    h1 {
+        font-size: 3rem;
+        margin-bottom: 1rem;
+        color: variables.$primary-color;
+    }
+
+    p {
+        font-size: 1.2rem;
+        margin-bottom: 2rem;
+    }
+}

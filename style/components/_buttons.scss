@@ -1,0 +1,28 @@
+@use "../abstracts/variables";
+
+.submit-button {
+    background-color: variables.$primary-color;
+    color: variables.$light-color;
+    border: none;
+    padding: 0.75rem 1.5rem;
+    font-size: 1rem;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+
+    &:hover {
+        background-color: variables.$secondary-color;
+    }
+}
+
+.home-link {
+    display: inline-block;
+    background-color: variables.$primary-color;
+    color: variables.$light-color;
+    padding: 0.75rem 1.5rem;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+
+    &:hover {
+        background-color: variables.$secondary-color;
+    }
+}

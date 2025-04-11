@@ -1,0 +1,116 @@
+@use "../abstracts/variables";
+
+.home-page {
+    .hero {
+        text-align: center;
+        padding: 3rem 1rem;
+        background-color: variables.$dark-color;
+        color: variables.$light-color;
+        margin-bottom: 2rem;
+
+        h1 {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+        }
+
+        .club-logo {
+            max-width: 80%;
+            max-height: 400px;
+            display: block;
+            margin: 0 auto;
+        }
+    }
+
+    .features {
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 2rem 1rem;
+
+        h2 {
+            text-align: center;
+            margin-bottom: 2rem;
+            font-size: 2rem;
+        }
+
+        .features-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+
+            .feature-card {
+                background-color: #f5f5f5;
+                padding: 1.5rem;
+                border-radius: 8px;
+                box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+
+                h3 {
+                    color: variables.$primary-color;
+                    margin-bottom: 1rem;
+                }
+            }
+        }
+    }
+
+    .social-links {
+        max-width: 1200px;
+        margin: 3rem auto;
+        padding: 2rem 1rem;
+        text-align: center;
+
+        h2 {
+            margin-bottom: 2rem;
+            font-size: 2rem;
+        }
+
+        .social-icons {
+            display: flex;
+            flex-direction: column;
+            gap: 1.5rem;
+            align-items: center;
+
+            @media screen and (min-width: variables.$breakpoint-tablet) {
+                flex-direction: row;
+                justify-content: center;
+                flex-wrap: wrap;
+            }
+        }
+
+        .social-link {
+            display: flex;
+            align-items: center;
+            padding: 0.75rem 1.5rem;
+            background-color: #f5f5f5;
+            border-radius: 50px;
+            transition: all 0.3s ease;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+
+            .icon {
+                font-size: 1.5rem;
+                margin-right: 0.75rem;
+            }
+
+            .link-text {
+                font-weight: 500;
+            }
+
+            &:hover {
+                transform: translateY(-3px);
+                box-shadow: 0 5px 10px rgba(0, 0, 0, 0.15);
+            }
+
+            &.email-link:hover {
+                background-color: #e0e0e0;
+            }
+
+            &.instagram-link:hover {
+                background-color: #fcf0f6;
+                color: #c13584;
+            }
+
+            &.facebook-link:hover {
+                background-color: #f0f2fc;
+                color: #3b5998;
+            }
+        }
+    }
+}

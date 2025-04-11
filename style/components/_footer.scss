@@ -1,0 +1,8 @@
+@use "../abstracts/variables";
+
+.footer {
+    background-color: variables.$dark-color;
+    color: variables.$light-color;
+    text-align: center;
+    padding: 1rem;
+}

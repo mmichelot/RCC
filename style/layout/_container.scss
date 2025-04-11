@@ -1,0 +1,6 @@
+@use "../abstracts/variables";
+
+.main-content {
+    min-height: calc(100vh - 150px);
+    padding: 2rem;
+}
